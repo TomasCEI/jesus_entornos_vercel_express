@@ -15,7 +15,7 @@ app.use(express.json())
 
 // Serving static files from the 'Public' directory
 const __dirname = path.resolve();
-app.use(express.static(path.join(__dirname, "Public")));
+app.use(express.static(path.join(__dirname, "public")));
 
 
 app.get('/', (req, res) => {
